@@ -8,7 +8,7 @@
 class Bed
 {
     public $result;
-    public function emptyС($cell, $dis)
+    public function EmС($cell, $dis)
     {
         $flag = 0;
         foreach ($cell as $c)
@@ -57,7 +57,7 @@ if(isset($_POST))
 {
 $obj = new Bed();
 $url = json_decode(file_get_contents('php://input'),True);
-echo json_encode(['result' => ($obj -> emptyС($url["cells"],$url["distance"]))]);
+echo json_encode(['result' => ($obj -> EmС($url["cells"],$url["distance"]))]);
 }
 
 ?>
